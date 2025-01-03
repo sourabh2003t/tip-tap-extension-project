@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Enhanced Highlight Editor - ReactJS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project implements a Tiptap-based rich text editor with custom extensions for highlighting, **bold**, *italic*, underline, and strikethrough text formatting.
 
-## Available Scripts
+## Prerequisites
+Before running the application, ensure that you have the following installed:
 
-In the project directory, you can run:
+Node.js (v14 or higher)
 
-### `npm start`
+npm (comes with Node.js)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## **Getting Started**
+Follow the steps below to get the project up and running on your local machine:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 1. Clone the Repository
+First, clone the repository to your local machine:
 
-### `npm test`
+**Copy code:**
+```java
+git clone <repository-url>
+cd <repository-folder>
+```
+### 2. Install Dependencies
+Install the necessary dependencies by running:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Copy code:**
+```java
+npm install
+```
+### 3. Install Tiptap and Required Extensions
+In addition to the core Tiptap library, you'll need to install the necessary extensions like Highlight and Underline. To do this, run the following:
 
-### `npm run build`
+**Copy code**
+```java
+npm install @tiptap/react 
+npm install @tiptap/starter-kit 
+npm install @tiptap/extension-highlight 
+npm install @tiptap/extension-underline 
+npm install react-icons
+```
+This will install the following:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**@tiptap/react:** Core Tiptap React bindings
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**@tiptap/starter-kit:** Starter kit for Tiptap (includes basic text editing functionality)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**@tiptap/extension-highlight:** Highlighting extension
 
-### `npm run eject`
+**@tiptap/extension-underline:** Underline extension
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**react-icons:** For adding icons to the toolbar
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 4. Run the Application
+Once dependencies are installed, you can start the application locally by running:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Copy code:**
+```java
+npm start
+```
+The app will run at http://localhost:3000.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 5. Build the Application for Production (Optional)
 
-## Learn More
+If you want to create an optimized build for production, run:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Copy code**
+```java
+npm run build
+```
+This will create a production build in the build/ directory.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Usage
+Once the app is running, you can use the Editor with the following features:
 
-### Code Splitting
+**Bold:** Toggle bold text.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Italic:** Toggle italic text.
 
-### Analyzing the Bundle Size
+**Underline:** Toggle underline text.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**Strikethrough:** Toggle strikethrough text.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Highlight:** Highlight selected text (default color: yellow).

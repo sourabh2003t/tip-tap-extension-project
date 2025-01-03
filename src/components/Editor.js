@@ -5,7 +5,7 @@ import { useEditor, EditorContent } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
 import Highlight from '@tiptap/extension-highlight';
 import Underline from '@tiptap/extension-underline';
-import './Editor.css'; // Custom CSS for the impressive UI
+import './Editor.css'; 
 import { FaHighlighter, FaBold, FaItalic, FaUnderline, FaStrikethrough } from 'react-icons/fa';
 
 const Editor = () => {
@@ -71,4 +71,4 @@ const Editor = () => {
 
 export default Editor;
 
-/* Editor.css for the impressive UI */
+

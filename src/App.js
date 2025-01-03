@@ -1,5 +1,5 @@
 import React from 'react';
-import Editor from './components/Editor'; // Importing the Editor component
+import Editor from './components/Editor'; 
 
 const App = () => {
   return (
@@ -9,7 +9,7 @@ const App = () => {
   );
 };
 
-// Main app styling
+
 const appStyle = {
   display: 'flex',
   justifyContent: 'center',
